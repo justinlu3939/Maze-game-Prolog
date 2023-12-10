@@ -26,7 +26,7 @@ valid_position((X, Y), Maze) :-
     nth0(X, Row, Cell),
     Cell \= w,
     Cell \= '|',
-    Cell \= '--',
+    Cell \= '-',
     \+ (X < 0; Y < 0),
     length(Maze, NumRows),
     length(Row, NumCols),
